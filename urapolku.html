@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maija Virta Digital CV Urapolku</title>
+    <meta charset="UTF-8">
+
+ <!-- skaalaa sivun käyttäjän päätelaitteen resoluution mukaan-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Saira' rel='stylesheet'>
+
+    <style>
+        body {
+    font-family: 'Saira';font-size: 18px;
+    }
+        h1 {
+                color: #004aad;  
+    }
+        h2 {
+                color: #004aad;
+    }
+    
+
+/* Yläpalkki */
+    .navbar {
+      display: flex;
+      justify-content: space-between; /* kuva vasemmalle, linkit oikealle */
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #004aad; /* sininen */
+    }
+
+    /* Kuva */
+    .navbar img {
+      height: 50px; /* säädä kuvan korkeus sopivaksi */
+    }
+
+    /* Linkit */
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px; /* väli linkkien väliin */
+      font-weight: normal;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+    article {
+      display: flex;
+      gap: 20px; /* väli osien väliin */
+    }
+    
+    section {
+      padding: 10px;
+    }
+
+    .vasen {
+      flex: 0 0 30%;  /* 30% leveys */
+    }
+
+    .oikea {
+      flex: 0 0 60%;  /* 60% leveys */
+    }
+
+ /* Mobiilinäkymä: pinotaan allekkain */
+    @media (max-width: 768px) {
+      article {
+        flex-direction: column;
+      }
+      .vasen, .oikea {
+        flex: 100%;
+      }
+    }
+
+        /* Alapalkki */
+    .footer {
+      position: fixed;         /* pysyy aina näkyvissä */
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #004aad; /* sininen */
+      display: flex;
+      justify-content: flex-end; /* oikeaan reunaan */
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: normal;
+    }
+
+    .footer a:hover {
+      text-decoration: none;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="navbar">
+    <img src="a_logo.jpg" alt="Kukkalogo">
+     <nav class="nav-links">
+      <a href="index.html">Maija</a>
+      <a href="referenssit.html">Referenssit</a>
+    </nav>
+  </header>
+
+
+<header>
+    <h1>Maija Virta</h1>
+</header>
+
+<article>
+    <section class="vasen">
+    <img src="kolmio.jpg" alt="Osaamisen kasvukolmio" width="250" height="250">
+    </section>
+
+    <section class="oikea">
+    <h2>Digiä ja dataa 
+        ilolla ja ihmisläheisesti</h2>
+
+
+    <p>Osaamisen perusta on insinöörin taidoissa. Looginen ajattelu,
+     analysointi ja ratkaisujen tuottaminen ovat mielenkiintoisia tehtäviä. Kovia 
+    osaamisia höystää kyky aitoon ihmisen kohtaamiseen ja 
+    läsnäolevaan kuunteluun. Tässä onkin loistava yhdistelmä työskentelyyn ihmisten kassa,
+    kouluttamiseen ja prosessien kehittämiseen yhteistyössä. </p>
+    
+    <p>Avainsanat: HRIS, HR information system administration, HR Data, 
+        analytics and reporting</p>
+
+         
+        </section>
+</article>
+
+<div style="height:60px;"></div>
+
+<div class="footer">
+  <a href="http://www.linkedin.com/in/maija-kaarina-virta" target="_blank" class="btn" >LinkedIN</a>
+  <a href="mailto:maija.hirvikorpi-virta@outlook.com" class="btn">Ollaan yhteyksissä</a>
+</div>
+
+</body>
+
+
+</html>
